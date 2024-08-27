@@ -1,0 +1,23 @@
+body{
+    background-color: #E10802;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.centraliza{
+    text-align: center;
+}
+.line{
+    display: inline;
+}
+li{
+    border: solid;
+    padding: 1%;
+}
+nav{
+    text-align: center;
+    background-color: #E03102;
+    padding: 1%;
+}
+
+#pessoais{
+    border-style: double;
+}

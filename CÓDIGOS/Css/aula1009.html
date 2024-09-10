@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <title>Aula02</title>
+    <link rel="stylesheet" href="estilinho.css">
+</head>
+<body>
+    <div>
+        <H1>Formulários + CSS Flex</H1>
+    </div>
+    <div class="container">
+        <form action="#" method="get">
+            <!-- Todas as inputs devem estar entre <form> e </form>-->
+             <div>
+                <label for="comment">Comentário</label>
+                <textarea name="c" id="comment" cols="50" rows="10">
+                </textarea>
+             </div>
+             <div>
+                <label for="nome">Nome</label>
+                <input type="text" name="n" id="nome"
+                                        minlength="2" maxlength="10">
+             </div>
+             <div>
+                <label for="fone">Telefone</label>
+                <input type="tel" name="t" id="fone">
+             </div>
+             <div>
+                <label for="senha">Senha*</label>
+                <input type="password" name="s" id="senha" required>
+             </div>
+             <div>
+                <label for="mail">E-mail</label>
+                <input type="email" name="e" id="mail" required
+                                                    placeholder="email@email.com">
+             </div>
+             <div>
+                <label for="nascimento">Data de nascimento</label>
+                <input type="date" name="d" id="nascimento"> 
+             </div>
+             <div>
+                <label for="qtd">Quantidade</label>
+                <input type="number" name="q" id="qtd">
+                <!--
+                Se quiser valores decimais adicione a propriedade
+                step="2" (para casa decimais)
+                -->
+             </div>
+             <div>
+                <p>Você deseja a entrega?</p>
+                <label for="sim">Sim</label>
+                <input type="radio" name="f" id="sim" value="sim">
+                <label for="nao">Não</label>
+                <input type="radio" name="f" id="nao" value="nao">
+             </div>
+             <div>
+                <p>Gênero(s) preferido(s) de série ou filme</p>
+                <label for="acao">Ação</label>
+                <input type="checkbox" name="acao" id="a">
+                <label for="romance">Romance</label>
+                <input type="checkbox" name="romance" id="r">
+                <label for="terror">Terror</label>
+                <input type="checkbox" name="terror" id="t">
+                <label for="ficcao">Ficção</label>
+                <input type="checkbox" name="ficcao" id="f">
+                <label for="drama">Drama</label>
+                <input type="checkbox" name="drama" id="d">
+             </div>
+             <div>
+                <label for="c1">Curso</label>
+                <select name="curso" id="c1">
+                    <option value="1">Análise e des. de sistemas</option>
+                    <option value="2" selected>Eng. de software</option>
+                    <option value="3">Biomedicina</option>
+                    <option value="4">Odontologia</option>
+                    <option value="5">Psicologia</option>
+                    <option value="6">Direito</option>
+                    <option value="7">Arquitetura</option>
+                    <option value="8">Farmácia</option>
+                    <option value="9">Fisioterapia</option>
+                    <option value="10">Medicina</option>
+                </select>
+             </div>
+             <input type="submit" name="salvar" id="sv" value="salvar">
+        </form>
+    </div>
+</body>
+</html>
